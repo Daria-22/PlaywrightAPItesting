@@ -9,7 +9,7 @@ test('GET request', async ({ request }) => {
     console.log("Response body: ", responseBody);
     
     // count the lengths of all descriptions
-    // count the sum of all ids
+    // count the sum of all ids //
     let sum = 0;
     let alldescriptionsLengths = 0;
     for(let user of responseBody){
