@@ -97,6 +97,7 @@ test('PUT request to update a post', async ({ request }) => {
         
        // verify that changed data match the sent data 
        // Проверь, что данные в ответе соответствуют отправленным. +
+       // iterate on object properties and compare them with received response properties
         expect(object.userId).toBe(responseAfterChangeBody.userId);
         expect(object.id).toBe(responseAfterChangeBody.id);
         expect(object.title).toBe(responseAfterChangeBody.title);
