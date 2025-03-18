@@ -1,0 +1,37 @@
+❯ mix phx.routes
+               up_path  GET    /up                                                      AssignmentsApiWeb.UpController :index
+       assignment_path  PUT    /private-api/v2/school/:product/assignments/bulk_expire  AssignmentsApiWeb.Api.V2.School.AssignmentController :bulk_expire
+       assignment_path  PATCH  /private-api/v2/student/:student_id/assignments/expire   AssignmentsApiWeb.Api.V2.Admin.AssignmentController :expire_student_assignments
+       assignment_path  PATCH  /private-api/v2/teacher/:teacher_id/assignments/expire   AssignmentsApiWeb.Api.V2.Admin.AssignmentController :expire_teacher_assignments
+             task_path  GET    /api/v2/:scope/:scope_id/:product/tasks                  AssignmentsApiWeb.Api.V2.TaskController :index
+read_aloud_review_path  GET    /api/v2/student/:product/read_aloud_reviews              AssignmentsApiWeb.Api.V2.ReadAloudReviewController :index
+read_aloud_review_path  GET    /api/v2/student/:product/read_aloud_reviews/:id/edit     AssignmentsApiWeb.Api.V2.ReadAloudReviewController :edit
+read_aloud_review_path  GET    /api/v2/student/:product/read_aloud_reviews/new          AssignmentsApiWeb.Api.V2.ReadAloudReviewController :new
+read_aloud_review_path  GET    /api/v2/student/:product/read_aloud_reviews/:id          AssignmentsApiWeb.Api.V2.ReadAloudReviewController :show
+read_aloud_review_path  POST   /api/v2/student/:product/read_aloud_reviews              AssignmentsApiWeb.Api.V2.ReadAloudReviewController :create
+read_aloud_review_path  PATCH  /api/v2/student/:product/read_aloud_reviews/:id          AssignmentsApiWeb.Api.V2.ReadAloudReviewController :update
+                        PUT    /api/v2/student/:product/read_aloud_reviews/:id          AssignmentsApiWeb.Api.V2.ReadAloudReviewController :update
+read_aloud_review_path  GET    /api/v2/:product/read_aloud_reviews                      AssignmentsApiWeb.Api.V2.ReadAloudReviewController :index
+read_aloud_review_path  GET    /api/v2/:product/read_aloud_reviews/:id/edit             AssignmentsApiWeb.Api.V2.ReadAloudReviewController :edit
+read_aloud_review_path  GET    /api/v2/:product/read_aloud_reviews/new                  AssignmentsApiWeb.Api.V2.ReadAloudReviewController :new
+read_aloud_review_path  GET    /api/v2/:product/read_aloud_reviews/:id                  AssignmentsApiWeb.Api.V2.ReadAloudReviewController :show
+read_aloud_review_path  POST   /api/v2/:product/read_aloud_reviews                      AssignmentsApiWeb.Api.V2.ReadAloudReviewController :create
+read_aloud_review_path  PATCH  /api/v2/:product/read_aloud_reviews/:id                  AssignmentsApiWeb.Api.V2.ReadAloudReviewController :update
+                        PUT    /api/v2/:product/read_aloud_reviews/:id                  AssignmentsApiWeb.Api.V2.ReadAloudReviewController :update
+       assignment_path  PATCH  /api/v2/assignments/:uuid                                AssignmentsApiWeb.Api.V2.AssignmentController :update
+       assignment_path  GET    /api/v2/assignments/:uuid                                AssignmentsApiWeb.Api.V2.AssignmentController :show
+             task_path  GET    /api/v2/student/:product/tasks                           AssignmentsApiWeb.Api.V2.Student.TaskController :index
+             task_path  PUT    /api/v2/student/:product/tasks/:id                       AssignmentsApiWeb.Api.V2.Student.TaskController :update
+         activity_path  PUT    /api/v2/student/:product/:precinct/activity/:id          AssignmentsApiWeb.Api.V2.Student.ActivityController :update
+       assignment_path  GET    /api/v2/students/:product/assignments/current            AssignmentsApiWeb.Api.V2.Students.AssignmentController :current
+       assignment_path  GET    /api/v2/students/:product/assignments/past               AssignmentsApiWeb.Api.V2.Students.AssignmentController :past
+       assignment_path  POST   /api/v2/teacher/:product/assignments                     AssignmentsApiWeb.Api.V2.Teacher.AssignmentController :create
+       assignment_path  GET    /api/v2/teacher/:product/assignments/current             AssignmentsApiWeb.Api.V2.Teacher.AssignmentController :current
+       assignment_path  GET    /api/v2/teacher/:product/assignments/past                AssignmentsApiWeb.Api.V2.Teacher.AssignmentController :past
+       assignment_path  PUT    /api/v2/teacher/:product/assignments/:uuid/expire        AssignmentsApiWeb.Api.V2.Teacher.AssignmentController :expire
+       assignment_path  GET    /api/v2/school/:product/assignments/current              AssignmentsApiWeb.Api.V2.School.AssignmentController :current
+       assignment_path  GET    /api/v2/school/:product/assignments/past                 AssignmentsApiWeb.Api.V2.School.AssignmentController :past
+       assignment_path  PUT    /api/v2/school/:product/assignments/:uuid/expire         AssignmentsApiWeb.Api.V2.School.AssignmentController :expire
+       assignment_path  PUT    /api/v2/school/:product/assignments/bulk_expire          AssignmentsApiWeb.Api.V2.School.AssignmentController :bulk_expire
+       assignment_path  PATCH  /api/v2/admin/student/:student_id/assignments/expire     AssignmentsApiWeb.Api.V2.Admin.AssignmentController :expire_student_assignments
+       assignment_path  PATCH  /api/v2/admin/teacher/:teacher_id/assignments/expire     AssignmentsApiWeb.Api.V2.Admin.AssignmentController :expire_teacher_assignments

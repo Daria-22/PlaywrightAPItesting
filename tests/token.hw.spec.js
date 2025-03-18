@@ -36,7 +36,7 @@ test('CREATE POSTAFTER AUTHORISATION ', async ({ request }) => {
             //'Authorization': "Basic YWRtaW46cGFzc3dvcmQxMjM=", //does not work
             'Cookie': `token=${token}` // does not work
              },
-            json: {
+            data: {
                 firstname: "John",
                 lastname: "Doe",
                 totalprice: 200,
