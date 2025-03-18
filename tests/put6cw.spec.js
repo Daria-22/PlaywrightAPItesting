@@ -19,7 +19,7 @@ test('PUT request to update a post', async ({ request }) => {
     const initialResponse = await request.get(url);
     // Transform response into json
     const initialResponseBody = await initialResponse.json();
-    console.log('This is initialResponseBody:', initialResponseBody);
+    //console.log('This is initialResponseBody:', initialResponseBody);
     // Print to verify the initial length
     console.log(`The initial response body contains ${initialResponseBody.length} elements`)
     
