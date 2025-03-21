@@ -1,9 +1,13 @@
+
 function idsInArrayAreUnique(array) {
     let seenIds = new Set(array);
     let matchpercent = seenIds.size/array.length;
     return (matchpercent === 1)
 }
 
+module.exports = {
+    idsInArrayAreUnique
+}
     
         let myArray = [
             '662f69469da23014c6ae878e',
