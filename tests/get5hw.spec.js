@@ -12,12 +12,12 @@ test('GET request - get body, ensure id is unique', async ({ request }) => {
     //console.log(getrequestUsersJson);
     //console.log(typeof getrequestUsersJson)
     let allUsers = getrequestUsersJson.allUsers;
-    console.log(allUsers);
+    console.log("These are all users from get request", allUsers);
     let array = [];
     for (let item of getrequestUsersJson.allUsers){
         array.push(item._id)
     }
-    console.log(array);
+    console.log("These are user's ids added in an array", array);
     //use function which defines if the unique set size is equal to initial array length by division,if
     // it equals the 1 - true, else - false
     let myTestCase = idsInArrayAreUnique(array);
@@ -25,3 +25,7 @@ test('GET request - get body, ensure id is unique', async ({ request }) => {
     console.log('Finished test to define that IDs are unique')
 
 })
+
+//npx playwright test tests/get5hw.spec.js --project=chromium
+//npx playwright test tests/get5hw.spec.js --project=webkit
+//npx playwright test tests/get5hw.spec.js --project=firefox
